@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VLORA LDS OPMEM</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --pink-glow: #ff69b4; 
+            --light-pink: #ffe4e1;
+            --text-color: #333;
+            --bg-color: #ffffff;
+            --header-font: 'Playfair Display', serif; 
+            --body-font: 'Poppins', sans-serif;
+        }
+
+        body {
+            font-family: var(--body-font);
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            margin: 0;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .container {
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 25px;
+            background-color: rgba(255, 255, 255, 0.95);
+            border-radius: 15px;
+            box-shadow: 0 4px 25px rgba(0, 0, 0, 0.15);
+        }
+
+        header { margin-bottom: 30px; }
+        
+        .founder-info-prominent {
+            font-family: var(--body-font);
+            font-weight: 700; 
+            color: var(--pink-glow); 
+            text-transform: uppercase;
+            font-size: 1.1em;
+            margin-bottom: 5px; 
+            text-shadow: 0 0 5px var(--light-pink);
+        }
+
+        h1 {
+            font-family: var(--header-font);
+            font-weight: 700;
+            color: var(--pink-glow);
+            text-shadow: 0 0 8px var(--pink-glow);
+            font-size: 2.5em; 
+            margin-top: 0; 
+            margin-bottom: 5px;
+        }
+
+        .subtitle {
+            font-size: 1em;
+            color: #666;
+            margin-top: 5px;
+        }
+        
+        .join-request {
+            margin-top: 20px;
+            padding: 25px;
+            border: 2px dashed var(--pink-glow);
+            border-radius: 10px;
+            background-color: #fffaf0;
+            text-align: left;
+        }
+
+        .join-request h3 {
+            color: var(--pink-glow);
+            text-align: center;
+            margin-bottom: 20px;
+            font-size: 1.5em;
+        }
+
+        .form-group { margin-bottom: 15px; }
+        label { display: block; font-weight: 600; margin-bottom: 5px; color: #c2185b; }
+        
+        input[type="text"], input[type="number"], textarea {
+            width: 100%; padding: 10px; border: 1px solid #ccc; border-radius: 5px; box-sizing: border-box; 
+            font-family: var(--body-font);
+        }
+        textarea { resize: vertical; min-height: 80px; }
+        
+        .contact-selection { 
+            text-align: center; 
+            margin: 20px 0; 
+            padding: 10px; 
+            border-top: 1px solid #f0e6f2; 
+        }
+        
+        .whatsapp-button {
+            display: block;
+            width: 100%;
+            padding: 12px;
+            margin-top: 20px;
+            background-color: #25D366; 
+            color: white;
+            border: none;
+            border-radius: 25px;
+            font-size: 1.05em;
+            font-weight: 600;
+            cursor: pointer;
+            box-shadow: 0 4px 10px rgba(37, 211, 102, 0.4);
+        }
+        
+        .contact-label {
+            display: inline-block; 
+            margin: 5px 10px;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <header>
+        <p class="founder-info-prominent">
+            PENDIRI ~DINI INDIRA PRATAMA PUTRI~
+        </p>
+        
+        <h1>VLORA LDS OPMEM</h1>
+        <p class="subtitle">HAY CEWEK-CEWEK👋🏻👋🏻 VLORA LDS LAGI OPMEM NIEH YUK JOIND DAN ISI FORMAT DI BAWAH INI 👇🏻.</p>
+    </header>
+
+    <div class="join-request">
+        <h3>Formulir Pendaftaran Anggota</h3>
+        <p style="text-align: center; margin-bottom: 20px; font-weight: 500;">Isi data dan jawab pertanyaan dengan benar. Form akan otomatis dikirim via WhatsApp.</p>
+
+        <form id="joinForm">
+            <div class="form-group"><label for="nama">Nama Panggilan:</label><input type="text" id="nama" required></div>
+            <div class="form-group"><label for="tahunLahir">Kelahiran Tahun:</label><input type="number" id="tahunLahir" required></div>
+            <div class="form-group"><label for="level">Level FF:</label><input type="number" id="level" required></div>
+            
+            <div class="form-group"><label for="nickname">Nickname FF:</label><input type="text" id="nickname" required></div>
+            <div class="form-group"><label for="idff">ID FF:</label><input type="number" id="idff" required></div>
+
+            <div class="form-group"><label for="pertanyaan1">1. Kenapa kamu keluar dari guild sebelumnya?</label><textarea id="pertanyaan1" required></textarea></div>
+            <div class="form-group"><label for="pertanyaan2">2. Apa yang membuat kamu tertarik join ke Vlora LDS?</label><textarea id="pertanyaan2" required></textarea></div>
+            <div class="form-group"><label for="pertanyaan3">3. Apakah kamu siap mengikuti aturan yang ada di Vlora LDS?</label><textarea id="pertanyaan3" required></textarea></div>
+
+            <p style="font-style: italic; font-size: 0.9em; text-align: center; margin: 20px 0;">
+                Mohon siapkan VN/Foto Perkenalan Diri untuk dikirim setelah form ini terkirim.
+            </p>
+
+            <div class="contact-selection">
+                <label class="contact-label">
+                    <input type="radio" name="contact" value="raisa" required checked> Kirim ke kak raisa 
+                </label>
+                <label class="contact-label">
+                    <input type="radio" name="contact" value="ejaa" required> Kirim ke kak ejaa
+                </label>
+                <label class="contact-label">
+                    <input type="radio" name="contact" value="cella" required> Kirim ke kak cella
+                </label>
+            </div>
+            
+            <button type="submit" class="whatsapp-button">
+                Kirim Form Pendaftaran via WhatsApp
+            </button>
+        </form>
+    </div>
+</div>
+
+<script>
+    // --- FUNGSI WHATSAPP FORM ---
+    const joinForm = document.getElementById('joinForm');
+    joinForm.addEventListener('submit', function(event) {
+        event.preventDefault();
+        sendToWhatsapp();
+    });
+
+    function sendToWhatsapp() {
+        const nama = document.getElementById('nama').value;
+        const tahunLahir = document.getElementById('tahunLahir').value;
+        const level = document.getElementById('level').value;
+        const nickname = document.getElementById('nickname').value;
+        const idff = document.getElementById('idff').value;
+        const p1 = document.getElementById('pertanyaan1').value;
+        const p2 = document.getElementById('pertanyaan2').value;
+        const p3 = document.getElementById('pertanyaan3').value;
+        const selectedContact = document.querySelector('input[name="contact"]:checked').value;
+        let number = "";
+        let contactName = "";
+
+        // PENGATURAN KONTAK OFFICER (Nomor Kak Jeyya sudah disesuaikan ke 13 digit)
+        if (selectedContact === "raisa") {
+            // Nomor VL || SACHA` (Raisa)
+            number = "6285233008359"; 
+            contactName = "VL || SACHA` (Kak Raisa)";
+        } else if (selectedContact === "jeyya") {
+            // Nomor VL || JEYAA (Ejaa) - Disesuaikan menjadi 13 digit
+            number = "6288200724946"; 
+            contactName = "VL || JEYAA (Kak ejaa)";
+        } else if (selectedContact === "cella") {
+            // Nomor VL || CELL (Cella)
+            number = "6281269939840"; 
+            contactName = "VL || CELL (Kak Cella)";
+        }
+        
+        // Pesan yang akan dikirim ke WhatsApp
+        const message = `Halo kak👋🏻 ${contactName},\n\nSaya ingin mengajukan permohonan untuk bergabung di Vlora LDS.\n\n*FORMAT PENDAFTARAN VLORA LDS (OPMEM VLORA LDS)*\nNama Panggilan: ${nama}\nKelahiran Tahun: ${tahunLahir}\nLevel FF: ${level}\nNickname FF: ${nickname}\nID FF: ${idff}\n\n1. Kenapa kamu keluar dari guild sebelumnya?\nJawaban: ${p1}\n\n2. Apa yang membuat kamu tertarik join ke Vlora LDS?\nJawaban: ${p2}\n\n3. Apakah kamu siap mengikuti aturan yang ada di Vlora LDS?\nJawaban: ${p3}\n\nSaya sudah siap untuk mengirim VN/FOTO PERKENALAN DIRI.`;
+
+        const wa_link = `https://wa.me/${number}?text=${encodeURIComponent(message)}`;
+
+        window.open(wa_link, '_blank');
+    }
+</script>
+</body>
+</html>
